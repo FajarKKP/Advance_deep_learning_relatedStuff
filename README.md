@@ -48,6 +48,7 @@ As we can see, both original and optimized model improved tremendously in perfor
 
 ### 2A
 Compared using time and CPU used:
+
 ![cpu_torch_compile](https://github.com/user-attachments/assets/d1d048ab-f705-4bfe-91ea-69801113e231)
 
 Compared using torch.utils.benchmark and CPU used:
@@ -62,7 +63,6 @@ Compared using time and Cuda used:
 ![using_time_cuda](https://github.com/user-attachments/assets/25cff6a8-6e48-4b08-a40d-db376ad2fa4f)
 
 Compared using torch.utils.benchmark and Cuda used:
-
 
 ![benchmark_cuda](https://github.com/user-attachments/assets/d45ea59d-9ade-4022-8cd7-e9fcd1ecf5db)
 
