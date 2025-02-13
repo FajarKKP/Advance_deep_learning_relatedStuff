@@ -47,7 +47,28 @@ Using Cuda.
 As we can see, both original and optimized model improved tremendously in performance.
 
 ### 2A
+Compared using time and CPU used:
+![cpu_torch_compile](https://github.com/user-attachments/assets/d1d048ab-f705-4bfe-91ea-69801113e231)
+
+Compared using torch.utils.benchmark and CPU used:
+
+![benchmark_cpu](https://github.com/user-attachments/assets/f2dc9ac5-a231-433a-bc48-eead065df747)
+
+
 ### 2B
+
+Compared using time and Cuda used:
+
+![using_time_cuda](https://github.com/user-attachments/assets/25cff6a8-6e48-4b08-a40d-db376ad2fa4f)
+
+Compared using torch.utils.benchmark and Cuda used:
+
+
+![benchmark_cuda](https://github.com/user-attachments/assets/d45ea59d-9ade-4022-8cd7-e9fcd1ecf5db)
+
+Based on the data given, involving cuda significantly boost their performance either using time or torch.utils.benchmark as metrics.
+In general, fused kernel SDPA achieve better results than its naive version.
+
 ### 3A
 ### 3B
 ### 3C
