@@ -70,6 +70,12 @@ Based on the data given, involving cuda significantly boost their performance ei
 In general, fused kernel SDPA achieve better results than its naive version.
 
 ### 3A
+
+The benefit MXINT8 could provide:
+* sdsdsd
+* sfsf
+
+
 ### 3B
 ### 3C
 ### 3D
