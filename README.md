@@ -72,11 +72,18 @@ In general, fused kernel SDPA achieve better results than its naive version.
 ### 3A
 
 The benefit MXINT8 could provide:
-* sdsdsd
-* sfsf
+* More efficient in memory storage. In custom hardware where memory bandwith and storage is limited, this gives the memory an option
+to store values in smaller format.
+* Efficient Multiplication. Integer operations, like MXINT8, are usually faster and less resource heavy than floating-point operations.
+* Parallelism. Custom hardware can take advantage of the lower bit-width to process more data in parallel
 
 
 ### 3B
+
+Both are used on the calcuation of y[i].
+dont_need_abs = a boolean value that 
+bias = used for
+
 ### 3C
 ### 3D
 
