@@ -7,6 +7,7 @@
 
 #### 1A
 ![Lab1_1_A](https://github.com/user-attachments/assets/92947434-fc5d-4aa5-a22b-3fb3e20ec7db)
+
 Based on the plot, we can see the accuracy stagnate 
 
 
@@ -29,10 +30,12 @@ the batch size, the amount of operations executed and the CPU's ability. One way
 do "warm-up". By making the model do warm-up, we can get a better generalize performance from the model.
 
 Without warm-up:
+
 ![without_warm_up](https://github.com/user-attachments/assets/52053299-fcaa-48c3-b143-3d9846b4660b)
 
 
 After using warm-up:
+
 ![cpu_torch_compile](https://github.com/user-attachments/assets/897f0a4a-0cf3-44d0-a959-03f961f6d974)
 
 
