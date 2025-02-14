@@ -81,8 +81,9 @@ to store values in smaller format.
 ### 3B
 
 Both are used on the calcuation of y[i].\
-dont_need_abs = a boolean value that 
-bias = used for
+dont_need_abs = a boolean value that is determined by the value mantissa_abs and 0x40. It handles whether the current value of hX[i]
+                needs to be handled in a specific way or use the usual computation way.\ 
+bias = used to calculate an offset that is applied to the result of out if dont_need_abs is false. bias works by setting fraction part out to zero, while           keeping the sign and exp same.  
 
 ### 3C
 ### 3D
