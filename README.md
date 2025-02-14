@@ -66,7 +66,7 @@ Compared using torch.utils.benchmark and Cuda used:
 
 ![benchmark_cuda](https://github.com/user-attachments/assets/d45ea59d-9ade-4022-8cd7-e9fcd1ecf5db)
 
-Based on the data given, involving cuda significantly boost their performance either using time or torch.utils.benchmark as metrics.
+Based on the data given, involving cuda significantly boost their performance either using time or torch.utils.benchmark as metrics.\
 In general, fused kernel SDPA achieve better results than its naive version.
 
 ### 3A
@@ -80,7 +80,7 @@ to store values in smaller format.
 
 ### 3B
 
-Both are used on the calcuation of y[i].
+Both are used on the calcuation of y[i].\
 dont_need_abs = a boolean value that 
 bias = used for
 
