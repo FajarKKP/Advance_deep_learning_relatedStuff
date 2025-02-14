@@ -94,10 +94,15 @@ The general steps on how cta_tiller partitions data for copying are:
 
 <ol start="1">
   <li>Defining the tile size</li>
-  <li>Sixth item</li>
-  <li>Seventh item</li>
+  <li>Partitioning the data</li>
+  <li>Copying data to shared memory</li>
+  <li>Handling strided or Non-contiguous Memory</li>
+  <li>Memory coalescing and Data alignment</li>
+  <li>Thread partitioning for computation</li>
 </ol>
 
+layout_sX partition is usually handled by the thread block's execution model to ensure efficient use of hardware recources.\
+adfsdf df
 
 ### 3D
 
