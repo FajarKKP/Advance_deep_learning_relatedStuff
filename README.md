@@ -9,23 +9,26 @@
 
 ![Lab1_1_A](https://github.com/user-attachments/assets/fe91235b-e30f-45ad-9ce9-b310ee08130f)
 
-Based on the plot, we can see the accuracy stagnate 
+Based on the plot, we can see the accuracy stagnate after 8 fixed point widths. The highest is achieved during the value 8 at 83.9%
 
 
 #### 1.1.B
 
 ![Lab1_1_B](https://github.com/user-attachments/assets/45192965-9609-4714-aa7a-0aa5683cccba)
 
+The plot shows that using QAT in general is better than PTQ. QAT achieved its highest value at around 8 while PTQ at around 16. After those peaks, both PTQ and QAT value stagnate.
 
 #### 1.2.A
 
 ![Lab1_2_A](https://github.com/user-attachments/assets/fbf038fb-e2f2-4294-b45c-7fe29744941c)
 
-
+The graph shows that its highest accuracy during 0.1 and 0.2 sparsity. From then it gradually goes lower to around 0.50 at 0.9 sparsity.
 
 #### 1.2.B
 
 ![Lab1_2_B](https://github.com/user-attachments/assets/d27d1ad1-66bc-4da4-bb6b-3392ceab44da)
+
+The graph shows with different prunning strategies, L1-norm is still the best. Random methods stagnate a little above 0.5 from 0.1 to 0.9 sparsity.
 
 
 ## Lab 2
