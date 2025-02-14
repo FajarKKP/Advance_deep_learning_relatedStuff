@@ -18,7 +18,7 @@ Based on the plot, we can see the accuracy stagnate after 8 fixed point widths. 
 
 The plot shows that using QAT in general is better than PTQ. QAT achieved its highest value at around 8 while PTQ at around 16. After those peaks, both PTQ and QAT value stagnate.
 
-#### 1.2.A
+##### 1.2.A
 
 ![Lab1_2_A](https://github.com/user-attachments/assets/fbf038fb-e2f2-4294-b45c-7fe29744941c)
 
@@ -32,18 +32,58 @@ The graph shows with different prunning strategies, L1-norm is still the best. R
 
 
 ## Lab 2
+### Questions:
 
+![question_2](https://github.com/user-attachments/assets/db1a047c-b629-4461-a116-e87ae86b8b06)
+
+#### Lab 2.1.A and 2.1.B
+
+![Lab2_1_A_B](https://github.com/user-attachments/assets/23842b96-cdbf-48f5-a413-c311996a2241)
+
+From the plot, it can be seen that GridSampler and TPESampler has been used to measure the model performance.\
+Based on their performance, GridSampler achieve the better result nearing 0.87 in its accuracy.
+
+
+#### Lab 2.2.A and 2.2.B
+
+Apologise sir/ma'am. I am unable to give a plot from this because my program always run into error. The error is eiter "Tensor found not on CPU/GPU" or "TypeError: forward() got an unexpected keyword argument 'token_type_ids'"
 
 ## Lab 3
+### Questions:
+
+![Questions_3](https://github.com/user-attachments/assets/c9e3c4cc-76b3-4210-9a6b-fa13ac148bc7)
+
+#### Lab 3.1.A
+
+![code_implementation_Lab_3_1](https://github.com/user-attachments/assets/42234dea-7543-4691-83df-2bb663a394e9)
+
+Add an additional hyperparameter for the Optuna sampler to choose.
+
+#### Lab 3.1.B
 
 
+![lab3_B](https://github.com/user-attachments/assets/e2b07ada-2da9-48d3-90cd-3306df1c068e)
 
+The plot shows that the highest accuracy is achieved from trial 13 onwards with accuracy above 0.879.
+
+#### Lab 3.2.A
+
+![list of linear layer implemented](https://github.com/user-attachments/assets/4a53ebef-b5f4-4678-b122-cde4d000a298)
+
+The list of linear layer that will be implemented.
+
+#### Lab 3.2.B
+
+![plot_3_2_b](https://github.com/user-attachments/assets/8d7b9bd2-6251-47e8-bdf7-4b010232202c)
+
+The graph above shows the results of the implemented linear layer. It shows a bit chaotic due to a combinatorial search space.\
+A way that may help to overcome combinatorial search space is to classify the search space based on their types (arithmetics with each other and so on) 
 
 ## Lab 4
 ### Questions:
 ![Questions_4](https://github.com/user-attachments/assets/e1402b90-ebeb-4ef5-8f93-83a4f8daad96)
 
-### 4.1.A
+#### 4.1.A
 There are many factors that can impact the run-time of torch.compile. Some of the factors included could be the size of the model, 
 the batch size, the amount of operations executed and the CPU's ability. One way to maybe get a more accurate number is by making the model
 do "warm-up". By making the model do warm-up, we can get a better generalize performance from the model.
@@ -58,14 +98,14 @@ After using warm-up:
 ![cpu_torch_compile](https://github.com/user-attachments/assets/897f0a4a-0cf3-44d0-a959-03f961f6d974)
 
 
-### 4.1.B
+#### 4.1.B
 Using Cuda.
 
 ![cuda_torch_compile](https://github.com/user-attachments/assets/75c1c69a-5419-4a7b-9f75-d11a9fe4aa96)
 
 As we can see, both original and optimized model improved tremendously in performance.
 
-### 4.2.A
+#### 4.2.A
 Compared using time and CPU used:
 
 ![cpu_torch_compile](https://github.com/user-attachments/assets/d1d048ab-f705-4bfe-91ea-69801113e231)
@@ -75,7 +115,7 @@ Compared using torch.utils.benchmark and CPU used:
 ![benchmark_cpu](https://github.com/user-attachments/assets/f2dc9ac5-a231-433a-bc48-eead065df747)
 
 
-### 4.2.B
+#### 4.2.B
 
 Compared using time and Cuda used:
 
@@ -88,7 +128,7 @@ Compared using torch.utils.benchmark and Cuda used:
 Based on the data given, involving cuda significantly boost their performance either using time or torch.utils.benchmark as metrics.\
 In general, fused kernel SDPA achieve better results than its naive version.
 
-### 4.3.A
+#### 4.3.A
 
 The benefit MXINT8 could provide:
 * More efficient in memory storage. In custom hardware where memory bandwith and storage is limited, this gives the memory an option
@@ -97,7 +137,7 @@ to store values in smaller format.
 * Parallelism. Custom hardware can take advantage of the lower bit-width to process more data in parallel
 
 
-### 4.3.B
+#### 4.3.B
 
 Both are used on the calcuation of y[i].
 
@@ -106,7 +146,7 @@ dont_need_abs = a boolean value that is determined by the value mantissa_abs and
                 
 bias = used to calculate an offset that is applied to the result of out if dont_need_abs is false. bias works by setting fraction part out to zero, while           keeping the sign and exp same.  
 
-### 4.3.C
+#### 4.3.C
 cta_tiller is a utility that helps partition data for optimal performance when copying between memory spaces.
 It partitions the data into smaller manageable tiles that can be efficiently handled by the threads in a thread block.
 The general steps on how cta_tiller partitions data for copying are:
@@ -123,7 +163,7 @@ The general steps on how cta_tiller partitions data for copying are:
 layout_sX partition is usually handled by the thread block's execution model to ensure efficient use of hardware recources.\
 adfsdf df
 
-### 4.3.D
+#### 4.3.D
 
 
 
