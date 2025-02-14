@@ -88,6 +88,17 @@ dont_need_abs = a boolean value that is determined by the value mantissa_abs and
 bias = used to calculate an offset that is applied to the result of out if dont_need_abs is false. bias works by setting fraction part out to zero, while           keeping the sign and exp same.  
 
 ### 3C
+cta_tiller is a utility that helps partition data for optimal performance when copying between memory spaces.
+It partitions the data into smaller manageable tiles that can be efficiently handled by the threads in a thread block.
+The general steps on how cta_tiller partitions data for copying are:
+
+<ol start="1">
+  <li>Defining the tile size</li>
+  <li>Sixth item</li>
+  <li>Seventh item</li>
+</ol>
+
+
 ### 3D
 
 
