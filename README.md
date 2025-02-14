@@ -169,6 +169,9 @@ In general, it is a way of managing the organization of threads within a thread 
 Based on my search on the internet, here are some of hypothetical reasons:
 
 * Approximation of Memory calculations. The calculations is not very precise into the final detail. Therefore some calculations is limited by approximation.
+* Memory Fragmentation. This can lead to inefficiencies in memory usage such as effective savings could be lower than expected.
+* Other varaibles. There may exist another varaibles that has not been taken into account during the calculation.
+* GPU Memory Management. How the memory management works may caused some calculations to be off due to some specific operations.
 
 
 
