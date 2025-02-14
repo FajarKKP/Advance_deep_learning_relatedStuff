@@ -161,11 +161,14 @@ The general steps on how cta_tiller partitions data for copying are:
 </ol>
 
 layout_sX partition is usually handled by the thread block's execution model to ensure efficient use of hardware recources.\
-adfsdf df
+layout_sX refers to a method of how threads in a thread block is partitioned based on the X dimension. X here refers to the thread index in the thread block.
+In general, it is a way of managing the organization of threads within a thread block to make computations more efficient by minimizing contention and optimizing resource utilization.
 
 #### 4.3.D
 
+Based on my search on the internet, here are some of hypothetical reasons:
 
+* Approximation of Memory calculations. The calculations is not very precise into the final detail. Therefore some calculations is limited by approximation.
 
 
 
